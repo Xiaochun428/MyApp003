@@ -38,7 +38,7 @@ struct CalculatorBrain {
             "+" :Operation.binaryOperation({ $0 + $1 }),
             "-" :Operation.binaryOperation({ $0 - $1 }),
             "=" :Operation.equals,
-            ".": Operation.float
+            //".": Operation.float
             
     ]
     
