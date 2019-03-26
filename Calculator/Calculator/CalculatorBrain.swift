@@ -23,9 +23,6 @@ struct CalculatorBrain {
         
     }
     
-    
-    
-    
     private var operations: Dictionary<String,Operation> =
         [
             "π" : Operation.constant(Double.pi),
@@ -38,10 +35,8 @@ struct CalculatorBrain {
             "+" :Operation.binaryOperation({ $0 + $1 }),
             "-" :Operation.binaryOperation({ $0 - $1 }),
             "=" :Operation.equals,
-            //".": Operation.float
             
-    ]
-    
+            ]
     
     mutating func performOperation(_ symbol:String) {
         if let operation = operations[symbol] {
@@ -85,21 +80,7 @@ struct CalculatorBrain {
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+       
     mutating func setOperand(_ operand: Double) {
         accumulator = operand
     }
@@ -111,13 +92,6 @@ struct CalculatorBrain {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
 }

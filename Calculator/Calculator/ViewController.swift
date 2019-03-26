@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  
     var userIsInTheMiddleTyping = false
     
     @IBOutlet weak var display: UILabel!
@@ -20,6 +19,10 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         if userIsInTheMiddleTyping {
             let textCurrentlyInDisplay = display.text!
+            
+            //let is sort of local variable that could only use in local scope(put a variable inside a function that  only be use in this function).
+            
+            
             display.text = textCurrentlyInDisplay + digit
         }
             
