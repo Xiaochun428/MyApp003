@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    
+  
     var userIsInTheMiddleTyping = false
     
     @IBOutlet weak var display: UILabel!
@@ -44,7 +39,7 @@ class ViewController: UIViewController {
         }
     }
     
-        
+    
     
     private var brain = CalculatorBrain()
     
@@ -60,6 +55,6 @@ class ViewController: UIViewController {
         if let result = brain.result {
             displayValue = result
         }
-    } //edit
+    }
 }
 
